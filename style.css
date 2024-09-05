@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Grotesk", sans-serif;
+}
+a {
+    text-decoration: none !important;
+}
+.green-background-color{
+    background-color: #B9FF66;
+}
+
+/* navbar css */
+.before-query{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.navbar-anchor-middle{
+    font-size: 26px;
+    color: black;
+ }
+ .right-bar-h3{
+border: 1px solid black;
+padding: 20px;
+border-radius: 20px;
+}
+
+.after-for-navbar{
+    display: none;
+}
+
+/* <!-- here navigating digital landascape and horn pic in this slot --> CSS HERE */
+
+.book-consultation-black-anchor{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.main-container-for-navigate{
+    display: flex;
+    justify-content: space-around;
+}
+
+.after-query-main-container-for-navigate{
+    display: none;
+}
+
+/* <!-- here are the logos containerng of cnetlfix amazon etc --> */
+.logos-container-for-channels{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* <!-- her eis the sevice and some text apart --> */
+.services-text-image{
+    width: 83%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* <!-- two green and gray divs --> */
+.green-gray-main-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.green-div{
+    border: 1px solid black;
+    display: flex;
+    border-bottom: 5px solid black;
+    border-radius: 20px;
+}
+
+.after-query-green-gray{
+    display: none;
+}
+
+/* 6 boxes here */
+.first-box-first-line{
+    display: flex;
+    justify-content: space-between;
+}
+.border-bottome{
+    border: 1px solid black;
+
+    border-bottom: 5px solid black;
+    border-radius: 20px;
+}
+
+/* query her lllllllllllll */
+
+
+@media (max-width: 1201px) {
+    .navbar-anchor-middle{
+        font-size: 16px
+     }
+     .right-bar-h3{
+        padding: 10px;
+    border-radius: 10px;
+     }
+    
+}
+
+/* this will be displaye after 992 */
+
+@media (max-width: 804px) {
+   .before-query{
+    display: none;
+   }
+   .after-for-navbar{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+   }
+   .main-container-for-navigate{
+    display: none;
+   }
+   .after-query-main-container-for-navigate{
+    display: block;
+}
+.logos-container-for-channels{
+    display: flex;
+    flex-wrap: wrap
+}
+.services-text-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+.after-query-green-gray{
+    display: block;
+}
+.green-gray-main-div{
+    display: none;
+}
+}
