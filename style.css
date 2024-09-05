@@ -7,8 +7,21 @@ body{
 a {
     text-decoration: none !important;
 }
+hr{
+    width: 94%;
+}
+.green-color-change{
+    color: #B9FF66;
+}
 .green-background-color{
     background-color: #B9FF66;
+}
+.border-radius{
+    border-radius: 20px;
+}
+.anchor-color-black{
+    color: black;
+    font-size: 15px;
 }
 
 /* navbar css */
@@ -21,10 +34,24 @@ a {
     font-size: 26px;
     color: black;
  }
+ .navbar-anchor-middle:hover{
+    box-shadow: 5px 10px 8px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+ }
+ .left-bar{
+    cursor: pointer;
+ }
+ .right-bar{
+    cursor: pointer;
+ }
  .right-bar-h3{
 border: 1px solid black;
-padding: 20px;
+padding: 15px;
 border-radius: 20px;
+}
+.right-bar-h3:hover{
+   box-shadow: 5px 10px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
 .after-for-navbar{
@@ -41,6 +68,12 @@ border-radius: 20px;
     border-radius: 20px;
 }
 
+.book-consultation-black-anchor:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
 .main-container-for-navigate{
     display: flex;
     justify-content: space-around;
@@ -53,7 +86,8 @@ border-radius: 20px;
 /* <!-- here are the logos containerng of cnetlfix amazon etc --> */
 .logos-container-for-channels{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    cursor: pointer;
     gap: 20px;
 }
 
@@ -74,6 +108,7 @@ border-radius: 20px;
     display: flex;
     border-bottom: 5px solid black;
     border-radius: 20px;
+    padding: 10px;
 }
 
 .after-query-green-gray{
@@ -125,7 +160,8 @@ border-radius: 20px;
 }
 .logos-container-for-channels{
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .services-text-image{
     display: flex;
