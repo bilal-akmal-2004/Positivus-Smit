@@ -4,9 +4,6 @@ body{
     padding: 0px;
     font-family: "Space Grotesk", sans-serif;
 }
-a {
-    text-decoration: none !important;
-}
 hr{
     width: 94%;
 }
@@ -22,6 +19,7 @@ hr{
 .anchor-color-black{
     color: black;
     font-size: 15px;
+    text-decoration: none;
 }
 
 /* navbar css */
@@ -33,6 +31,7 @@ hr{
 .navbar-anchor-middle{
     font-size: 26px;
     color: black;
+    text-decoration: none;
  }
  .navbar-anchor-middle:hover{
     box-shadow: 5px 10px 8px 2px rgba(0, 0, 0, 0.5);
@@ -66,6 +65,7 @@ border-radius: 20px;
     padding: 10px;
     background-color: black;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 .book-consultation-black-anchor:hover{
@@ -153,11 +153,71 @@ border-radius: 20px;
     border: 1px solid black;
 }
 
+/* footer css here */
+.main-footer-container{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.footer-navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-anchor-middle{
+    font-size: 26px;
+    color: white;
+ }
+ 
+ .middle-footer-navbar{
+    display: flex;
+    gap: 20px;
+ }
+ .right-footer-navbar{
+    display: flex;
+    gap: 20px;
+ }
+ /* middle section footer css here */
+ .middle-footer-contact-email{
+    display: flex;
+    justify-content: space-around;
+
+ }
+
+
+ .right-middle-footer-contact-email{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292A32;
+ }
+ .middle-footer-eamil-input{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 15px;
+ }
+
+ /* this after the query */
+
+ .after-query-logos-footer{
+    display: none;
+ }
+ /* :end ofooter */
+ .end-footer{
+    display: flex;
+    justify-content: center;
+ }
+
+
 /* query her lllllllllllll */
 
 
 @media (max-width: 1201px) {
     .navbar-anchor-middle{
+        font-size: 16px
+     }
+     .footer-anchor-middle{
         font-size: 16px
      }
      .right-bar-h3{
@@ -169,7 +229,7 @@ border-radius: 20px;
 
 /* this will be displaye after 992 */
 
-@media (max-width: 804px) {
+@media (max-width: 890px) {
    .before-query{
     display: none;
    }
@@ -205,4 +265,37 @@ border-radius: 20px;
 .right-form{
     display: none;
 }
+.right-footer-navbar{
+    display: none   ;
+}
+.middle-footer-navbar{
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .footer-anchor-middle{
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+ }
+ .footer-navbar{
+    flex-direction: column;
+ }
+ .middle-footer-contact-email{
+    display: block;
+ }
+ .right-middle-footer-contact-email{
+    flex-direction: column;
+ }
+ .left-middle-footer-contact-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .after-query-logos-footer{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
 }
